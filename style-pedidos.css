@@ -1,0 +1,129 @@
+body{
+    
+    background-image: url(images/gif_institucional_bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20;
+    background-color: #000000;
+}
+h1{
+    text-align: center;
+    color: #ffe54f;
+    
+}
+h3{
+    text-align: center;
+    color: #ffffff;
+   
+}
+
+#pedidos{
+    max-width: 1050px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fffef8;
+    border: 2px solid #110706;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #4b3b3b;
+   
+}
+.direitos{
+    text-align: center;
+    font-size: 14px;
+    color: #cfa185;
+    
+}
+
+#enviar{    
+    background: url('images/botao-enviar.png') no-repeat center center;
+    width : 140px ;
+    height : 40px ;
+    background-size : contain;
+    background-position : center center;
+    background-repeat : no-repeat;
+    border : none;
+    cursor : pointer;
+    padding: 0;
+    overflow: visible;
+}
+
+#enviar:hover {
+    background-color: #fffef8;
+    transform: scale(1.1);
+}
+
+#limpar{    
+    background: url('images/botao-limpar.png') no-repeat center center;
+    width : 140px ;
+    height : 40px ;
+    background-size : contain;
+    background-position : center center;
+    background-repeat : no-repeat;
+    border : none;
+    cursor : pointer;
+    padding: 0;
+    overflow: visible;
+}
+
+#limpar:hover {
+    background-color: #fffef8;
+    transform: scale(1.1);
+}
+
+#voltar{    
+    background: url('images/botao-voltar.png') no-repeat center center;
+    width : 140px ;
+    height : 40px ;
+    background-size : contain;
+    background-position : center center;
+    background-repeat : no-repeat;
+    border : none;
+    cursor : pointer;
+    padding: 0;
+    overflow: visible;
+}
+
+#voltar:hover {
+    background-color: #fffef8;
+    transform: scale(1.1);
+}
+
+#nome{
+    width: 80%;
+    max-width: 90%;
+}
+
+#telefone{
+    width: 85.5%;
+    max-width: 90%;
+}
+
+#email{
+    width: 87.5%;
+    max-width: 90%;
+}
+
+#quantidade{
+    width: 55%;
+    max-width: 90%;
+}
+
+#hora{
+    width: 43%;
+    max-width: 90%;
+}
+
+#endereco{
+    width: 70%;
+    max-width: 90%;
+}

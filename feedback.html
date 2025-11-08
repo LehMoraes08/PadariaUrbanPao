@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-contato.css">
+    <title>FEEDBACK</title>
+</head>
+<body>
+    <h1>Deixe o seu FEEDBACK.</h1>
+    <h3>Queremos ouvir você! Conte pra gente como foi sua experiência na UrbanPão.</h3>
+
+        <form id="feedback">            
+             <fieldset>
+                <legend class="titulo"> FORMULÁRIO DE FEEDBACK </legend>
+                    <br>         
+                    <label class=texto-base for="nome">👤Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..."><br><br>
+                    <label class=texto-base for="email">📧Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email aqui..."><br><br>
+                    <label class=texto-base for="produto_servico">📦Produto/Serviço</label>
+                        <select type="select" id="produto_servico" name="produto_servico" required><br><br>
+                            <option value="">Selecione uma opção</option>
+                            <option>🍞Pães</option>
+                            <option>🍪Doces</option>
+                            <option>🥐Salgados</option>
+                            <option>🫖Bebidas</option>
+                            <option>👩🏻‍🍳Atendimento</option>
+                            <option>🛋️Ambiente</option>
+                        </select>
+                    <br><br>                    
+                    <label class=texto-base for="avaliacao">⭐Avaliação Geral:⭐</label><br><br>
+                    <input type="radio" id="avaliacao" name="avaliacao" value="Excelente">
+                    <label class=texto-base for="avaliacao">Excelente</label>
+                    <input type="radio" id="avaliacao" name="avaliacao" value="Bom">
+                    <label class=texto-base for="avaliacao">Bom</label>
+                    <input type="radio" id="avaliacao" name="avaliacao" value="Regular">
+                    <label class=texto-base for="avaliacao">Regular</label>
+                    <input type="radio" id="avaliacao" name="avaliacao" value="Ruim">
+                    <label class=texto-base for="avaliacao">Ruim</label>
+                    <input type="radio" id="avaliacao" name="avaliacao" value="Péssimo">
+                    <label class=texto-base for="avaliacao">Péssimo</label><br><br>
+
+                    <label class=texto-base for="mensagem">💬Nos conte detalhes sobre a sua experiência na UrbanPão:</label><br>
+                    <textarea id="mensagem" name="mensagem" minlength="20" cols=60 rows="5"  placeholder="Escreva seu comentário aqui..."></textarea><br><br> 
+                    
+                    <button type="submit" id="enviar" value=" "></button>
+                    <button type="reset" id="limpar" value=" "></button>
+                    <button type="button" id="voltar" value=" " onclick="window.location.href='index_5.html'"></button>                    
+                <br>
+            </fieldset>
+        </form>  
+               
+        <p class="direitos">&copy; 2025 Urban Pão. Todos os direitos reservados.</p>
+
+            <script src="script-form-feedback.js"></script>
+    
+</body>
+</html>

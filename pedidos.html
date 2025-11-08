@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-pedidos.css">
+    <title>PEDIDOS</title>
+</head>
+<body>
+
+    <h1>Faça sua encomenda com a gente!</h1>
+    <h3>Preencha os dados do formulário abaixo.</h3>
+
+    <form id="pedidos">
+    
+    <fieldset>
+        <legend> Informações Pessoais:</legend>
+             <br>
+            <label for="nome">👤Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required><br><br>
+            <label for="telefone">📞Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone aqui..." required><br><br>
+            <label for="email">📧Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui..." required><br><br>
+    </fieldset>
+<br> 
+
+<fieldset>
+  <legend>Detalhes do Pedido</legend>
+  <p>Escolha seu produto:</p>
+  <table>
+    <tr>
+        <td>
+        <fieldset>
+          <legend>🎂 Bolos</legend>
+            <label class=bolos for="produto"></label><br>
+            <select type="select" id="produto-Bolo" name="produto">
+            <option value="Bolo">Selecione um sabor</option>
+                <option>Chocolate</option>
+                <option>Morango</option>
+                <option>Baunilha</option>
+                <option>Red Velvet</option>
+                <option>Cenoura</option>
+                <option>Limão</option>            
+        </fieldset>
+      </td>
+      
+      <td>
+        <fieldset>
+          <legend>🧁 Torta Doce</legend>
+            <label class=tortaDoce for="produto"></label><br>
+            <select type="select" id="produto-TortaDoce" name="produto">
+            <option value="Torta Doce">Selecione um sabor</option>
+                <option>Chocolate</option>
+                <option>Morango</option>
+                <option>Coco c/ doce de leite</option>
+                <option>Maracujá</option>
+                <option>Banoffe</option>
+                <option>Limão</option>          
+        </fieldset>
+      </td>
+
+      <td>
+        <fieldset>
+          <legend>🥧 Torta Salgada</legend>
+            <label class=tortaSalgada for="produto"></label><br>
+            <select type="select" id="produto-TortaSalgada" name="produto">
+            <option value="Torta Salgada">Selecione um sabor</option>
+                <option>Frango com catupiry</option>
+                <option>Palmito com tomate seco</option>
+                <option>Carne seca</option>
+                <option>Quatro queijos</option>
+                <option>Brócolis com bacon</option>
+                <option>Presunto e queijo</option>          
+        </fieldset>
+      </td>
+
+      <td>
+        <fieldset>
+          <legend>🥐 Salgados (cento)</legend>
+            <label class=salgados for="produto"></label><br>
+            <select type="select" id="produto-Salgados" name="produto">
+            <option value="Salgadinhos">Selecione um sabor</option>
+                <option>Coxinha</option>
+                <option>Kibe</option>
+                <option>Esfiha de Carne</option>
+                <option>Bolinha de Queijo</option>
+                <option>Enroladinho de Salsicha</option>
+                <option>Misturado (20 de cada)</option>          
+        </fieldset>
+      </td>
+
+      <td>
+        <fieldset>
+          <legend>🍪 Doces (cento)</legend>
+            <label class=doces for="produto"></label><br>
+            <select type="select" id="produto-Doces" name="produto">
+            <option value="Docinhos">Selecione um sabor</option>
+                <option>Brigadeiro</option>
+                <option>Beijinho</option>
+                <option>Bicho de Pé</option>
+                <option>Cajuzinho</option>
+                <option>Camafeu de nozes</option>
+                <option>Misturado (20 de cada)</option>          
+          
+        </fieldset>
+      </td>
+    </tr>
+  </table>       
+         <table>
+            <tr>
+                <td width="400">                
+                    <p>📏Tamanho:</p>
+                        <input type="radio" id="tamanhoP" name="tamanho" value="pequeno">
+                        <label for="tamanho">Pequeno - Serve até 10 pessoas</label><br><br>
+                        <input type="radio" id="tamanhoM" name="tamanho" value="medio">
+                        <label for="tamanho">Médio - Serve até 25 pessoas</label><br><br>
+                        <input type="radio" id="tamanhoG" name="tamanho" value="grande">
+                        <label for="tamanho">Grande - Serve até 40 pessoas</label><br><br>
+                </td>
+                <td>        
+                    <p>Detalhes do Pedido:</p>
+                    <label for="quantidade">🔢Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" required><br><br>
+                    <label for="data">`📅Data da Entrega:</label>
+                    <input type="date" id="data" name="data" required><br><br>
+                    <label for="hora">⏰Hora da Entrega:</label>
+                    <input type="time" id="hora" name="hora" required><br><br>
+                </td>                            
+                <td>
+                        <label for="mensagem">Observações especiais:</label><br><br>
+                        <textarea id="mensagem" name="mensagem" minlength="10" cols=35 rows="5"  placeholder="Escreva aqui..."></textarea><br><br>
+                </td>
+            </tr>
+        </table>    
+    </fieldset>
+    <br>
+    <fieldset>
+         <legend>Informações Adicionais:</legend>
+
+        <table>
+            <tr>
+                <td width="550">
+                    <p>💵Forma de Pagamento:</p>
+                        <input type="radio" id="pagamento-dinheiro" name="pagamento" value="dinheiro">
+                        <label for="pagamento-dinheiro">Dinheiro</label><br><br>
+                        <input type="radio" id="pagamento-cartao" name="pagamento" value="cartao">
+                        <label for="pagamento-cartao">Cartão de Crédito/Débito</label><br><br>
+                        <input type="radio" id="pagamento-pix" name="pagamento" value="pix">
+                        <label for="pagamento-pix">PIX</label><br><br>
+                </td>
+                <td width="550">
+                    <p>📦Retirada:</p>
+                        <input type="radio" id="retirada-entrega" name="retirada" value="entrega">
+                        <label for="retirada-entrega">Entrega</label><br><br>
+                        <input type="radio" id="retirada-loja" name="retirada" value="local">
+                        <label for="retirada-loja">Retirar na loja</label><br><br>
+                        Em caso de entrega, preencher o endereço abaixo:<br>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Endereço para entrega"><br>
+                </td>            
+                           
+            </tr>        
+        </table>
+        <br><br>
+                    <button type="submit" id="enviar" value=" "></button>
+                    <button type="reset" id="limpar" value=" "></button>
+                    <button type="button" id="voltar" value=" " onclick="window.location.href='index_5.html'"></button>
+
+    </fieldset>       
+    </form>
+    <p class="direitos">&copy; 2025 Urban Pão. Todos os direitos reservados.</p>
+    
+    <script src="script-form.js"></script>
+
+</body>
+</html>

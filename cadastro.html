@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-cadastro.css">
+    <title>CADASTRO</title>
+</head>
+<body>
+    <h1>Cadastre-se para receber nossas novidades!</h1>
+    <h3>Fique por dentro das promoções e lançamentos da UrbanPão.</h3>
+
+        <form id="cadastro">
+
+            <fieldset>
+                <legend class="titulo"> FORMULÁRIO DE CADASTRO:</legend>
+                            <br>
+                    <fieldset>
+                        <legend class="titulo">DADOS PESSOAIS</legend><br>
+                        <label class=texto-base  for="nome">👤Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required><br><br>
+                        <label class=texto-base  for="email">📧Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui..." required><br><br>
+                        <label class=texto-base  for="telefone">📞Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone aqui..." required><br><br>
+                        <label class=texto-base  for="data_nascimento">🎂Data de Nascimento:</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend class="titulo">ENDEREÇO:</legend><br>
+                            <table>
+                                <tr>
+                                    <td width="400">    
+                                            <label class=texto-base for="endereco">🏠Rua:</label>
+                                            <input type="text" id="rua" name="rua" placeholder="Digite seu endereço aqui..." required><br><br>
+                                            <label class=texto-base for="complemento">🏢Complemento:</label>
+                                            <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, Casa, etc..."><br><br>
+                                            <label class=texto-base for="cidade">🌆Cidade:</label>
+                                            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade aqui..." required><br><br>
+                                            <label class=texto-base for="cep">📮CEP:</label>
+                                            <input type="text" id="cep" name="cep" placeholder="Digite seu CEP aqui..." required><br><br>                                            
+                                    </td> 
+                                    <td width="400">  
+                                            <label class=texto-base for="numero">🔢Número:</label>
+                                            <input type="text" id="numero" name="numero" placeholder="Nº" required><br><br>
+                                            <label class=texto-base for="referencia">📍Ponto de Referência:</label>
+                                            <input type="text" id="referencia" name="referencia" placeholder="Referência"><br><br>                                            
+                                            <label class=texto-base for="bairro">🏘️Bairro:</label>
+                                            <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro aqui..." required><br><br>
+                                            <label class=texto-base for="estado">🏙️Estado:</label>                                            
+                                            <select type="select" id="estado" name="estado" required><br><br>
+                                                <option value="">Selecione uma opção</option>
+                                                <option>AC</option>
+                                                <option>AL</option>
+                                                <option>AP</option>
+                                                <option>AM</option>
+                                                <option>BA</option>
+                                                <option>CE</option>
+                                                <option>DF</option>
+                                                <option>ES</option>
+                                                <option>GO</option>
+                                                <option>MA</option>
+                                                <option>MT</option>
+                                                <option>MS</option>
+                                                <option>MG</option>
+                                                <option>PA</option>
+                                                <option>PB</option>
+                                                <option>PR</option>
+                                                <option>PE</option>
+                                                <option>PI</option>
+                                                <option>RJ</option>
+                                                <option>RN</option>
+                                                <option>RS</option>
+                                                <option>RO</option>
+                                                <option>RR</option>
+                                                <option>SC</option>
+                                                <option>SP</option>
+                                                <option>SE</option>
+                                                <option>TO</option>
+                                            </select><br><br>
+                                    </td>
+                                </tr>
+                        </table>
+                    <br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend class="titulo">PREFERÊNCIAS:</legend><br> 
+                        <label class=texto-base  for="preferencias">🛍️Quais produtos você mais gosta?</label><br><br>
+                        <input type="checkbox" id="preferencias" name="preferencias" value="pães">
+                        <label class=texto-base  for="preferencias">🍞Pães Artesanais</label><br>
+                        <input type="checkbox" id="preferencias" name="preferencias" value="doces">
+                        <label class=texto-base  for="preferencias">🍪Doces</label><br>
+                        <input type="checkbox" id="preferencias" name="preferencias" value="salgados">
+                        <label class=texto-base  for="preferencias">🥐Salgados</label><br>
+                        <input type="checkbox" id="preferencias" name="preferencias" value="bebidas">
+                        <label class=texto-base  for="preferencias">🫖Cafés</label><br>
+                        <input type="checkbox" id="preferencias" name="preferencias" value="bolos">
+                        <label class=texto-base  for="preferencias">🎂Bolos Caseiros</label><br>
+                        <input type="checkbox" id="preferencias" name="preferencias" value="tortas">
+                        <label class=texto-base  for="preferencias">🧁Tortas</label><br><br>
+                        <label class=texto-base for="preferencias">🧾Com que frequência você visita a UrbanPão?</label><br><br>
+                        <input type="radio" id="frequencia" name="frequencia" value="diariamente">
+                        <label css=texto-base for="frequencia">Todos os dias</label><br>
+                        <input type="radio" id="frequencia" name="frequencia" value="alguns_dias">
+                        <label class=texto-base for="frequencia">Algumas vezes na semana</label><br>
+                        <input type="radio" id="frequencia" name="frequencia" value="raramente">
+                        <label class=texto-base  for="frequencia">Raramente</label><br>
+                        <input type="radio" id="frequencia" name="frequencia" value="nao_conhece">
+                        <label class=texto-base  for="frequencia">Ainda não conheço</label><br><br>
+                        <label class=texto-base >📢Você gostaria de receber:</label><br><br>
+                        <input type="checkbox" id="gostaria" name="gostaria" value="promoções">
+                        <label class=texto-base for="gostaria">Promoções exclusivas</label><br>
+                        <input type="checkbox" id="gostaria" name="gostaria" value="novidades">
+                        <label class=texto-base for="gostaria">Novidades do cardápio</label><br>
+                        <input type="checkbox" id="gostaria" name="gostaria" value="eventos">
+                        <label class=texto-base  for="gostaria">Eventos especiais</label><br>
+                        <input type="checkbox" id="gostaria" name="gostaria" value="receitas">
+                        <label class=texto-base  for="gostaria">Receitas e dicas</label><br><br>
+                        <table>
+                            <tr>
+                                <td width="300">
+                                    <fieldset>
+                                        <legend id="legenda-form">🎁Clube de Fidelidade</legend>
+                                        <p>Gostaria de participar do nosso clube de fidelidade?</p>
+                                        <input type="radio" id="clube_fidelidade" name="clube_fidelidade" value="sim">
+                                        <label for="clube_fidelidade">😎Sim, quero participar!</label><br>
+                                        <input type="radio" id="clube_fidelidade" name="clube_fidelidade" value="nao">
+                                        <label for="clube_fidelidade">😱Não!</label><br>
+                                    </fieldset>
+                                </td>            
+                                <td width="300">
+                                    <fieldset>
+                                        <legend id="legenda-form">📬Newsletter Mensal</legend>
+                                        <p>Quer receber noticias e novidades sobre a UrbanPão?</p>
+                                        <input type="radio" id="newsletter" name="newsletter" value="sim">
+                                        <label for="newsletter">😃Sim, quero receber!</label><br>
+                                        <input type="radio" id="newsletter" name="newsletter" value="nao">
+                                        <label for="newsletter">🙁Não, obrigado!</label><br>
+                                    </fieldset> 
+                                </td>
+                                <td width="300">
+                                    <fieldset>
+                                        <legend id="legenda-form">💸Cupom de Desconto</legend>
+                                        <p>Deseja receber cupons de desconto?</p>
+                                        <input type="radio" id="desconto" name="desconto" value="sim">
+                                        <label for="desconto">🤑Desconto? Claro!</label><br>
+                                        <input type="radio" id="desconto" name="desconto" value="nao">
+                                        <label for="desconto">🫤Não, detesto desconto!</label><br>
+                                    </fieldset>                                                                 
+                            </tr>
+                        </table>              
+                        
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <table>
+                            <tr>
+                                <legend class="titulo">TERMOS:</legend><br>
+                                    <td width="500">
+                                        <label for="termos">Aceita receber promoções por email?</label><br>
+                                        <input type="checkbox" id="termos" name="termos" value="sim" required>
+                                        <label for="termos">Sim, aceito receber.</label><br><br>
+                                    </td>
+                                    <td width="400">
+                                    <label for="termos1">Li e aceito os termos de privacidade.</label><br>
+                                    <input type="checkbox" id="termos1" name="termos1" value="sim" required>
+                                    <label for="termos1">Sim, aceito os termos.</label><br><br>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <button type="submit" id="enviar" value=" "></button>
+                    <button type="reset" id="limpar" value=" "></button>
+                    <button type="button" id="voltar" value=" " onclick="window.location.href='index_5.html'"></button>
+            </fieldset>
+        </form>
+
+    <p class="direitos">&copy; 2025 Urban Pão. Todos os direitos reservados.</p>
+
+<script src="script-form-cadastro.js"></script>
+    
+</body>
+</html>

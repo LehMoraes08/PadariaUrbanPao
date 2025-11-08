@@ -1,0 +1,164 @@
+body{
+    
+    background-image: url(images/gif_institucional_bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20;
+    background-color: #000000;
+}
+
+h1{
+    text-align: center;
+    color: #ffe54f; 
+}
+
+h3{
+    text-align: center;
+    color: #ffffff;
+    
+}
+
+#cadastro{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fffef8;
+    border: 2px solid #110706;
+    border-radius: 10px;
+}
+
+#legenda-form{
+    background-color: #130400;
+    width: 180px;
+    text-align: center;
+    font-variant: bold;
+    border-radius: 15px;
+    color: #cfa185
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 24px;
+    color: #130400;
+}
+
+.texto-base{
+    font-size: 14px;
+    color: #130400;
+}
+
+.direitos{
+    text-align: center;
+    font-size: 14px;
+    color: #cfa185;
+}
+
+#enviar{    
+    background: url('images/botao-enviar.png') no-repeat center center;
+    width : 140px ;
+    height : 40px ;
+    background-size : contain;
+    background-position : center center;
+    background-repeat : no-repeat;
+    border : none;
+    cursor : pointer;
+    padding: 0;
+    overflow: visible;
+}
+
+#enviar:hover {
+    background-color: #fffef8;
+    transform: scale(1.1);
+}
+
+#limpar{    
+    background: url('images/botao-limpar.png') no-repeat center center;
+    width : 140px ;
+    height : 40px ;
+    background-size : contain;
+    background-position : center center;
+    background-repeat : no-repeat;
+    border : none;
+    cursor : pointer;
+    padding: 0;
+    overflow: visible;
+}
+
+#limpar:hover {
+    background-color: #fffef8;
+    transform: scale(1.1);
+}
+
+#voltar{    
+    background: url('images/botao-voltar.png') no-repeat center center;
+    width : 140px ;
+    height : 40px ;
+    background-size : contain;
+    background-position : center center;
+    background-repeat : no-repeat;
+    border : none;
+    cursor : pointer;
+    padding: 0;
+    overflow: visible;
+}
+
+#voltar:hover {
+    background-color: #fffef8;
+    transform: scale(1.1);
+}
+
+#nome{
+    width: 79.5%;
+    max-width: 90%;
+}
+
+#telefone{
+    width: 85.5%;
+    max-width: 90%;
+}
+
+#email{
+    width: 87.5%;
+    max-width: 90%;
+}
+
+#rua{
+    width: 70%;
+    max-width: 90%;
+}
+#complemento{
+    width: 55%;
+    max-width: 90%;
+}
+
+#cidade{
+    width: 66%;
+    max-width: 90%;    
+}
+
+#cep{
+    width:70%;
+    max-width: 90%;
+}
+
+#numero{
+    width: 70%;
+    max-width: 90%;
+}
+#referencia{
+    width: 51%;
+    max-width: 90%;
+}
+
+#bairro{
+    width: 74%;
+    max-width: 90%;    
+}
+
+#estado{
+    width:74%;
+    max-width: 90%;
+}

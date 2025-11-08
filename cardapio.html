@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDÁPIO</title>
+    <link rel="stylesheet" href="style-cardapio.css">
+</head>
+<body>
+
+    <h1>Conheça Nossas Delicias!</h1>
+
+        
+        <section id="carrinho">
+            <h2>🛒 Seu Carrinho</h2>
+            <ul id="listaCarrinho"></ul>
+            <p><strong>Total:</strong>R$<span id="totalCarrinho">0.00</span></p>
+            <label><input type="checkbox" id="taxaEntrega">Adicionar Taxa de Entrega (R$7,00)</label>
+            <button id="enviar"></button>
+            <button id="limpar"></button>
+        </section>  
+
+    <table class="cardapio">
+
+    <thead>
+        <tr>
+            <th></th>
+            <th class="titulo-tabela">Produto</th>
+            <th class="titulo-tabela">Preço</th>
+            <th class="titulo-tabela">Saiba mais</th>
+            <th class="titulo-tabela">Calculadora</th>
+            <th class="titulo-tabela">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;"><img src="images/pao.png" alt="Baguete em cima de uma tábua" width="160"></td>
+            <td>Pão Francês (un)</td>
+            <td>R$ 0,70</td>
+            <td><button class ="saiba-mais" onclick= "alert('Tradicional pão francês, crocante por fora e macio por dentro')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdPao" value= "0"><button class="calcular" onclick="calcularItem('Pão' , 0.70, 'qtdPao' , 'resPao')"></button><p class="resultado" id= "resPao"></p></td>         
+            <td><button class ="comprar" data-produto ="Pão Francês" data-preco ="0.70"></button></td>                     
+          <tr>
+            <td style="text-align: center;"><img src="images/pao_de_queijo.png" alt="4 pães que queijo em um cesto de vime" width="160"></td>
+            <td>Pão de Queijo (un)</td>
+            <td>R$ 6,50</td>
+            <td><button class ="saiba-mais" onclick= "alert('Delicioso pão de queijo, perfeito para qualquer hora do dia.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdPaoQueijo" value= "0"><button class="calcular" onclick="calcularItem('Pão de Queijo' , 6.50, 'qtdPaoQueijo' , 'resPaoQueijo')"></button><p class="resultado" id= "resPaoQueijo"></p></td>         
+            <td><button class ="comprar" data-produto = "Pão de Queijo" data-preco ="6.50"></button></td>           
+        </tr>
+          <tr>
+            <td style="text-align: center;"><img src="images/croissant.png" alt="Croissant's em uma mesa" width="160"></td>
+            <td>Croissant Recheado </td>
+            <td>R$ 6,50</td>
+            <td><button class ="saiba-mais" onclick= "alert('Croissant amanteigado recheado. Consulte sabores.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdCroissant" value= "0"><button class="calcular" onclick="calcularItem('Croissant' , 6.50, 'qtdCroissant' , 'resCroissant')"></button><p class="resultado" id= "resCroissant"></p></td>        
+            <td><button class ="comprar" data-produto = "Croissant Recheado" data-preco ="6.50"></button></td>           
+        </tr>
+           <tr>
+            <td style="text-align: center;"><img src="images/coxinha.png" alt="3 coxinhas em uma tabua, acompanhada com um pote de molho e um copo de refrigerante" width="160"></td>
+            <td>Coxinha</td>
+            <td>R$ 7,90</td>
+            <td><button class ="saiba-mais" onclick= "alert('Deliciosa Coxinha, crocante por fora, com recheio suculento de frango desfiado temperado na medida certa.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdCoxinha" value= "0"><button class="calcular" onclick="calcularItem('Coxinha' , 7.90, 'qtdCoxinha' , 'resCoxinha')"></button><p class="resultado" id= "resCoxinha"></p></td>    
+            <td><button class ="comprar" data-produto = "Coxinha" data-preco ="7.90"></button></td>            
+        </tr>
+          <tr>
+            <td style="text-align: center;"><img src="images/esfiha_carne.png" alt="Mini esfihas em uma travessa" width="160"></td>
+            <td>Esfiha de Carne </td>
+            <td>R$ 7,90</td>
+            <td><button class ="saiba-mais" onclick= "alert('Esfiha fechada com delicioso recheio de carne temperada.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdEsfiha" value= "0"><button class="calcular" onclick="calcularItem('Esfiha' , 7.90, 'qtdEsfiha' , 'resEsfiha')"></button><p class="resultado" id= "resEsfiha"></p></td>     
+            <td><button class ="comprar" data-produto = "Esfiha de Carne" data-preco ="7.90"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/misto_quente.png" alt="Sanduiche de queijo e presunto" width="160"></td>
+            <td>Misto Quente</td>
+            <td>R$ 10,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Clássico misto quente com queijo e presunto.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdMistoQuente" value= "0"><button class="calcular" onclick="calcularItem('Misto Quente' , 10.00, 'qtdMistoQuente' , 'resMistoQuente')"></button><p class="resultado" id= "resMistoQuente"></p></td>    
+            <td><button class ="comprar" data-produto = "Misto Quente" data-preco ="10.00"></button></td>            
+        </tr>               
+        <tr>
+            <td style="text-align: center;"><img src="images/bolo_chocolate.png" alt="Fatia de bolo de chocolate" width="160"></td>
+            <td>Bolo de Chocolate</td>
+            <td>R$ 7,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Fatia de bolo de chocolate com cobertura cremosa.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdBoloDeChocolate" value= "0"><button class="calcular" onclick="calcularItem('Bolo de Chocolate' , 7.00, 'qtdBoloDeChocolate' , 'resBoloDeChocolate')"></button><p class="resultado" id= "resBoloDeChocolate"></p></td>
+            <td><button class ="comprar" data-produto = "Bolo de Chocolate" data-preco ="7.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/bolo_cenoura.png" alt="Fatia de bolo de cenoura" width="160"></td>
+            <td>Bolo de Cenoura</td>
+            <td>R$ 7,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Fatia de bolo de cenoura com cobertura de chocolate.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdBoloDeCenoura" value= "0"><button class="calcular" onclick="calcularItem('Bolo de Cenoura' , 7.00, 'qtdBoloDeCenoura' , 'resBoloDeCenoura')"></button><p class="resultado" id= "resBoloDeCenoura"></p></td>    
+            <td><button class ="comprar" data-produto = "Bolo de Cenoura" data-preco ="7.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/pudim.png" alt="Pedaço de pudim" width="160"></td>
+            <td>Pudim de Leite</td>
+            <td>R$ 12,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Fatia de pudim de leite condensado com calda de caramelo.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdPudimDeLeite" value= "0"><button class="calcular" onclick="calcularItem('Pudim de Leite' , 12.00, 'qtdPudimDeLeite' , 'resPudimDeLeite')"></button><p class="resultado" id= "resPudimDeLeite"></p></td>        
+            <td><button class ="comprar" data-produto = "Pudim de Leite" data-preco ="12.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/sonho.png" alt="Sonho recheado com creme de confeiteiro" width="160"></td>
+            <td>Sonho Recheado</td>
+            <td>R$ 6,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Sonho recheado com creme ou doce de leite.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdSonho" value= "0"><button class="calcular" onclick="calcularItem('Sonho Recheado' , 6.00, 'qtdSonho' , 'resSonho')"></button><p class="resultado" id= "resSonho"></p></td>    
+            <td><button class ="comprar" data-produto = "Sonho Recheado" data-preco ="6.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/torta_limao.png" alt="Pedaço de torta de limão" width="160"></td>
+            <td>Torta de Limão</td>
+            <td>R$ 10,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Torta de limão com base crocante e recheio cremoso.')"></button>
+                <td id="calculadora">Qnt.:<input type = "number" id= "qtdTorta" value= "0"><button class="calcular" onclick="calcularItem('Torta de Limão' , 10.00, 'qtdTorta' , 'resTorta')"></button><p class="resultado" id= "resTorta"></p></td>
+            <td><button class ="comprar" data-produto = "Torta de Limao" data-preco ="10.00"></button></td>            
+        </tr>        
+        <tr>
+            <td style="text-align: center;"><img src="images/cafe_pequeno.png" alt="Xicara de café pequena" width="160"></td>
+            <td>Café Pequeno (xícara)</td>
+            <td>R$ 5,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Café tradicional.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdCafePq" value= "0"><button class="calcular" onclick="calcularItem('Café Pq' , 5.00, 'qtdCafePq' , 'resCafePq')"></button><p class="resultado" id= "resCafePq"></p></td>
+            <td><button class ="comprar" data-produto = "Café PQ" data-preco ="5.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/cafe_grande.png" alt="Xicara de café grande" width="160" height="160"></td>
+            <td>Café Grande (xícara)</td>
+            <td>R$ 7,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Café tradicional.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdCafeGd" value= "0"><button class="calcular" onclick="calcularItem('Café Gd' , 7.00, 'qtdCafeGd' , 'resCafeGd')"></button><p class="resultado" id= "resCafeGd"></p></td>
+            <td><button class ="comprar" data-produto = "Café GR" data-preco ="7.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/cafe_expresso.png" alt="Xicara de café expresso" width="160"></td>
+            <td>Café Expresso (xícara)</td>
+            <td>R$ 8,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Café expresso forte e encorpado.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdCafeEx" value= "0"><button class="calcular" onclick="calcularItem('Café Expresso' , 8.00, 'qtdCafeEx' , 'resCafeEx')"></button><p class="resultado" id= "resCafeEx"></p></td>
+            <td><button class ="comprar" data-produto = "Café Expresso" data-preco ="8.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/expresso_leite.png" alt="Xicara de café expresso com leite" width="160"></td>
+            <td>Café Expresso com leite (xícara)</td>
+            <td>R$ 9,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Café expresso com leite cremoso.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdCafeExLeite" value= "0"><button class="calcular" onclick="calcularItem('Café Expresso com Leite' , 9.00, 'qtdCafeExLeite' , 'resCafeExLeite')"></button><p class="resultado" id= "resCafeExLeite"></p></td>
+            <td><button class ="comprar" data-produto = "Café Expresso com Leite" data-preco ="9.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/cappuccino.png" alt="Xicara de cappuccino com canela" width="160"></td>
+            <td>Cappuccino (xícara)</td>
+            <td>R$ 10,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Bebida à base de café expresso, leite vaporizado, espuma de leite e canela.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdCappuccino" value= "0"><button class="calcular" onclick="calcularItem('Cappuccino' , 10.00, 'qtdCappuccino' , 'resCappuccino')"></button><p class="resultado" id= "resCappuccino"></p></td>
+            <td><button class ="comprar" data-produto = "Cappuccino" data-preco ="10.00"></button></td>            
+        </tr>        
+         <tr>
+            <td style="text-align: center;"><img src="images/agua.png" alt="Garrafa de agua, ao lado de um copo cheio de agua." width="160"></td>
+            <td>Água</td>
+            <td>R$ 3,50</td>
+            <td><button class ="saiba-mais" onclick= "alert('Água mineral sem gás ou com gás.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdAgua" value= "0"><button class="calcular" onclick="calcularItem('Água' , 3.50, 'qtdAgua' , 'resAgua')"></button><p class="resultado" id= "resAgua"></p></td>
+            <td><button class ="comprar" data-produto = "Água" data-preco ="3.50"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/refrigerante.png" alt="4 copos com refrigerante com gelo, de cores diferentes" width="160"></td>
+            <td>Refrigerante Lata (350ml)</td>
+            <td>R$ 6,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Refrigerante em lata. Consulte sabores.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdRefri" value= "0"><button class="calcular" onclick="calcularItem('Refrigerante Lata' , 6.00, 'qtdRefri' , 'resRefri')"></button><p class="resultado" id= "resRefri"></p></td>
+            <td><button class ="comprar" data-produto = "Refrigerante Lata" data-preco ="6.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/suco_natural.png" alt="3 copos de suco, com os ingredientes de cada um a sua frente" width="160"></td>
+            <td>Suco Natural (300ml)</td>
+            <td>R$ 7,00</td>
+            <td><button class ="saiba-mais" onclick= "alert('Suco natural feito na hora. Consulte sabores.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdSuco" value= "0"><button class="calcular" onclick="calcularItem('Suco Natural' , 7.00, 'qtdSuco' , 'resSuco')"></button><p class="resultado" id= "resSuco"></p></td>
+            <td><button class ="comprar" data-produto = "Suco Natural" data-preco ="7.00"></button></td>            
+        </tr>
+        <tr>
+            <td style="text-align: center;"><img src="images/cha.png" alt="2 xicaras de cha, alguns potes com ervas para o chá" width="160"></td>
+            <td>Chá</td>
+            <td>R$ 10,50</td>
+            <td><button class ="saiba-mais" onclick= "alert('Chá quente ou gelado. Consulte sabores.')"></button>
+            <td id="calculadora">Qnt.:<input type = "number" id= "qtdCha" value= "0"><button class="calcular" onclick="calcularItem('Chá' , 10.50, 'qtdCha' , 'resCha')"></button><p class="resultado" id= "resCha"></p></td>
+            <td><button class ="comprar" data-produto = "Chá" data-preco ="10.50"></button></td>            
+        </tr>
+       
+    </tbody>
+        </table>
+
+    <p class="direitos">&copy; 2025 Urban Pão. Todos os direitos reservados.</p>
+    <script src="script-cardapio.js"></script>
+</body>
+</html>

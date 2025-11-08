@@ -1,0 +1,439 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #130400;
+    color: #C5967b;
+    text-align: center;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fffef8;
+    padding: 10px 20px;
+    padding-top: 0;
+    border-bottom: 2px solid #ccc;
+    color: #130400;
+}
+
+.main-header .header-logo,
+.main-header .header-tag-logo {
+    height: 150px;
+    width: auto;
+
+}
+
+.main-header .header-tag-logo {
+    height: 100px;
+    width: auto;
+
+}
+
+.main-header h4 {
+    color: #130400;
+    margin-top: 155px;
+    margin-left: -124px;
+}
+
+.titulo-claro,
+.main-titulo-claro {
+    color: #fffef8;
+}
+
+.main-titulo-claro {
+    text-align: center;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.video-container {
+    background-color: #fffef8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.galeria {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    text-align: center;
+}
+
+.galeria th,
+.galeria td {
+    padding: 10px;
+}
+
+
+.galeria img {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.titulo-claro2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    background-color: #9c6343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.listra-tab1 {
+    background-color: #130400;
+}
+
+#titulo-h2 {
+    background-color: #9c6343;
+    color: #fffef8;
+    text-align: center;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.titulo-img {
+    background-color: #130400;
+}
+
+.direitos {
+    text-align: center;
+    font-size: 14px;
+    color: #130400;
+}
+
+.caixa-pai-promocao {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0;
+    padding: 10px;
+    background: #130400;
+    border-radius: 15px;
+}
+
+.caixa-filho-promocao {
+    background: #fffef8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.caixa-filho-promocao h3 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.caixa-filho-promocao img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ambiente {
+    background-color: #c5967b;
+    color: #130400;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.galeria_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.foto_flex_1 img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.foto_flex_2 img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+.foto_flex_logo img {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+#titulo_flex {
+    text-align: center;
+    color: #fffef8;
+    background-color: #130400;
+    font-size: 30px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.depoimentos {
+    background-color: #c5967b;
+    color: #130400;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#titulo_cards {
+    color: #fffef8;
+    text-align: center;
+    background-color: #280a01e5;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #fffef8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #9c6343;
+    text-align: center;
+    width: 200px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.avatar {
+    margin-bottom: 5px;
+}
+
+.texto_depoimento {
+    align-self: flex-start;
+    text-align: center;
+    margin-bottom: 10px;
+    min-height: 60px;
+}
+
+.botao-whatsapp,
+#btnTopo {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    background-color: #9c6343;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botao-whatsapp:hover,
+#btnTopo:hover {
+    background-color: #c5967b;
+    transform: scale(1.1);
+}
+
+.botao-whatsapp img,
+#btnTopo img {
+    width: 80%; 
+    height: auto;
+}
+
+#btnTopo {
+    bottom: 100px;
+    left: 20px;
+}
+
+.botao-whatsapp {
+    bottom: 20px;
+    left: 20px;
+}
+
+.botoes_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+    padding: 20px;
+
+}
+
+.botoes_nav a img {
+    width: 180px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.botoes_nav a img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    color: #130400;
+    background-color: #c5967b;
+}
+
+table {
+    max-width: 900px;
+    font-size: 25px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #fffef8;
+    border: 2px solid #110706;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    
+    .main-header {
+        margin: 0;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .botoes_nav a img {
+        width: 120px; 
+    }
+
+    .galeria_flex {
+        justify-content: center;
+    }
+    .foto_flex_1 img {
+        width: 50px;
+    }
+    .foto_flex_2 img {
+        width: 75px;
+    }
+    .foto_flex_logo img {
+        width: 100px;
+    }
+    .header-logo {
+        width: 80px;
+    }
+    .video-container video {
+        max-width: 100%;
+    }
+    .caixa-pai-promocao {
+        display: none;    
+    }
+
+}
+
+@media (min-width: 600px) {
+    body {
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+   .foto_flex_1 img {
+        width: 100px;
+    }
+    .foto_flex_2 img {
+        width: 130px;
+    }
+    .foto_flex_logo img {
+        width: 180px;
+    }
+    
+    .botoes_nav a img {
+        width: 200px;
+    }    
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .galeria img {
+        max-width: 150px;
+    } 
+   .foto_flex_1 img {
+        width: 100px;
+    }
+    .foto_flex_2 img {
+        width: 130px;
+    }
+    .foto_flex_logo img {
+        width: 180px;
+    }   
+    .botoes_nav a img {
+        width: 200px;
+    }
+    .video-container video {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .video-container video {
+        max-width: 700px;
+    }
+}
